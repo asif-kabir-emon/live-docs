@@ -17,7 +17,7 @@ const Collaborator = ({
     const [userType, setUserType] = useState(collaborator.userType || "viewer");
     const [loading, setLoading] = useState(false);
 
-    const shareDocumentHandler = async (type: UserType) => {
+    const shareDocumentHandler = async (type: string) => {
         setLoading(true);
 
         await updateDocumentAccess({

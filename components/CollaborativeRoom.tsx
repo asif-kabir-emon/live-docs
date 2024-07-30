@@ -83,7 +83,6 @@ const CollaborativeRoom = ({
                                 <Input
                                     type="text"
                                     value={documentTitle}
-                                    ref={inputRef}
                                     placeholder="Enter Title"
                                     onChange={(e) =>
                                         setDocumentTitle(e.target.value)
